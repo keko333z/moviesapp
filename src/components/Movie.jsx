@@ -11,7 +11,7 @@ export function Movie(){
       .then(resp => resp.json())
       .then(json => {setMovie(json)})
       .catch(error => console.log(error))
-      },[])
+      },[id])
       
       return (
         <>

@@ -43,7 +43,7 @@ function App() {
             <Movies movies={movies}/> : 
             ( quote ? <div className="quote"><p>{quote?.quote}</p><b>{quote?.movie}</b><p>{quote?.year}</p><img src={quote?.poster} alt='sorry, no poster this time'></img></div> : <h2>Loading...</h2>)}>
         </Route>
-        <Route path='/movie/:id' element={<Movie />}></Route>
+        <Route path='/moviesapp/movie/:id' element={<Movie />}></Route>
       </Routes>
       </div>
      </div>

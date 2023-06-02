@@ -18,12 +18,15 @@ export function Movie(){
          { movie ? 
           <div className="movie" key={movie?.imdbID}>
           <h2>{movie?.Title}</h2>
-          <p>{movie?.Year}</p>
+          <p>{movie?.Year} </p>
+          <p>Country: {movie?.Country} - Duration: {movie?.Runtime}</p>
           <img style={{width: '80%', marginLeft: '10%', padding: '10px'}} src={movie.Poster} alt="movie poster"></img>
-          <p>Duration: {movie?.Runtime}</p>
+          
+          <p>Genre: {movie?.Genre}</p>
           <div className="actors">Director: {movie?.Director}</div>
           <div className="plot">Plot: {movie?.Plot}</div>
           <div className="actors">Actors: {movie?.Actors}</div>
+          
           <div className="imdb">Imdb rating: {movie?.imdbRating}</div>
           <div className="metacritic">Metacritic score: {movie?.Metascore}</div>
           <div className="rottentomatoes">Rotten Tomatoes Tomatometer: {movie.Ratings[1]?.Value}</div>

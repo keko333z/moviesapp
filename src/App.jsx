@@ -39,11 +39,11 @@ function App() {
       <div className='body'>
       
       <Routes>
-        <Route path='/moviesapp/' element={ movies?.length !== 0 ? 
+        <Route path='/' element={ movies?.length !== 0 ? 
             <Movies movies={movies}/> : 
             ( quote ? <div className="quote"><p>{quote?.quote}</p><b>{quote?.movie}</b><p>{quote?.year}</p><img src={quote?.poster} alt='sorry, no poster this time'></img></div> : <h2>Loading...</h2>)}>
         </Route>
-        <Route path='/moviesapp/movie/:id' element={<Movie />}></Route>
+        <Route path='/movie/:id' element={<Movie />}></Route>
       </Routes>
       </div>
      </div>

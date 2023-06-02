@@ -10,7 +10,7 @@ export function Header({setMovies}) {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        navigate('/moviesapp/')
+        navigate('/')
         if (prevSearch.current === movieRef.current.value ) return
         fetch(`https://www.omdbapi.com/?apikey=dbd7f885&s=${movieRef.current.value}`)
         .then(resp => resp.json())
@@ -21,7 +21,7 @@ export function Header({setMovies}) {
 
     return (
     <div className="header">
-        <Link className="header-link" to='/moviesapp/' onClick={()=>{setMovies([]); prevSearch.current=''; movieRef.current.value='' }}>Home</Link>
+        <Link className="header-link" to='/' onClick={()=>{setMovies([]); prevSearch.current=''; movieRef.current.value='' }}>Home</Link>
         <form onSubmit={handleSubmit}>
             <input className="movie-search-input" ref={movieRef} placeholder="movie title..."></input>
             <button type="submit">Send</button>

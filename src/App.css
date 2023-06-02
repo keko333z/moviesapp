@@ -1,0 +1,112 @@
+#root {
+  width: 100%;
+  text-align: center;
+  background: #ffffff;
+}
+
+.container{
+  display: flex 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+.header {
+  background-color: #a30f1b;
+  min-height: 100px;
+  color: white;
+  padding-top: 50px;
+}
+
+.body {
+  min-height: 800px;
+  background-color: rgb(32, 32, 32);
+  padding-top: 10px;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.link {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: Arial;
+  font-size: 14px;
+  padding-top: 20px;
+}
+.header-link{
+  text-decoration: none;
+  color: aliceblue;
+  font-family: Arial;
+  font-size: 20px;
+  padding-top: 20px;
+  margin-right: 75%;
+  margin-left: 10%;
+}
+
+.movies {
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 10px;
+  width: 95%;
+  margin-left: 2.5%;
+  padding: 20px;
+}
+
+.movie {
+  color: #ffffff;
+  font-family: arial;
+  text-align: left;
+  font-size: 14px !important; 
+  width: 80%;
+  margin-left: 10%;
+  line-height: 2;
+  min-height: 1200px;
+}
+
+.quote {
+  color: white;
+  width: 90%;
+  min-height: 500px;
+  font-style: italic;
+  margin-left: 5%;
+  margin-top: 50px;
+  font-size: 18px;
+  line-height: 2;
+}
+h3 {
+  color: white;
+}
+.movie-search-input{
+  margin-right: 20px;
+}
+
+.plot {
+  font-style: oblique;
+  font-size: 20px;
+  color: #f3b817;
+  text-align: justify;
+}
+
+.imdb {
+  color: yellow;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.metacritic {
+  color: chartreuse;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.rottentomatoes{
+  color: rgb(243, 42, 42);
+  font-size: 18px;
+  margin-top: 15px;
+}
+.actors {
+  font-size: 18px;
+}

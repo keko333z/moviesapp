@@ -12,7 +12,7 @@ export function Movie(){
       .then(json => {setMovie(json)})
       .catch(error => console.log(error))
       },[])
-      console.log(movie)
+      
       return (
         <>
          { movie ? 

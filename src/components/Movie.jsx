@@ -16,17 +16,17 @@ export function Movie(){
       return (
         <>
          { movie ? 
-          <div className="movie" key={movie.imdbID}>
-          <h2>{movie.Title}</h2>
-          <p>{movie.Year}</p>
+          <div className="movie" key={movie?.imdbID}>
+          <h2>{movie?.Title}</h2>
+          <p>{movie?.Year}</p>
           <img style={{width: '80%', marginLeft: '10%', padding: '10px'}} src={movie.Poster} alt="movie poster"></img>
-          <p>Duration: {movie.Runtime}</p>
-          <div className="actors">Director: {movie.Director}</div>
-          <div className="plot">Plot: {movie.Plot}</div>
-          <div className="actors">Actors: {movie.Actors}</div>
-          <div className="imdb">Imdb rating: {movie.imdbRating}</div>
-          <div className="metacritic">Metacritic score: {movie.Metascore}</div>
-          <div className="rottentomatoes">Rotten Tomatoes Tomatometer: {movie.Ratings[1].Value}</div>
+          <p>Duration: {movie?.Runtime}</p>
+          <div className="actors">Director: {movie?.Director}</div>
+          <div className="plot">Plot: {movie?.Plot}</div>
+          <div className="actors">Actors: {movie?.Actors}</div>
+          <div className="imdb">Imdb rating: {movie?.imdbRating}</div>
+          <div className="metacritic">Metacritic score: {movie?.Metascore}</div>
+          <div className="rottentomatoes">Rotten Tomatoes Tomatometer: {movie.Ratings[1]?.Value}</div>
 
           </div>
            : <h3>Loading...</h3>

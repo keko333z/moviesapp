@@ -9,7 +9,7 @@ export function Header({setMovies}) {
     const navigate = useNavigate()
 
     const handleSubmit = (event) => {
-        event.preventDefault()
+       event.preventDefault()
         navigate('/')
         if (prevSearch.current === movieRef.current.value ) return
         fetch(`https://www.omdbapi.com/?apikey=dbd7f885&s=${movieRef.current.value}`)

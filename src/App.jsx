@@ -41,7 +41,7 @@ function App() {
       <Routes>
         <Route path='/' element={ movies?.length !== 0 ? 
             <Movies movies={movies}/> : 
-            ( quote ? <div className="quote"><p>{quote?.quote}</p><b>{quote?.movie}</b><p>{quote?.year}</p><img src={quote?.poster} alt='sorry, no poster this time'></img></div> : <h2>Loading...</h2>)}>
+            ( quote ? <div className="quote"><p>{quote?.quote}</p><b>{quote?.movie}</b><p>{quote?.year}</p><img src={quote?.poster ? quote?.poster : "https://e0.pxfuel.com/wallpapers/475/972/desktop-wallpaper-get-the-latest-movies-data-src-kodi-tv-shows-teahub-io.jpg"} alt='sorry, no poster this time'></img></div> : <h2>Loading...</h2>)}>
         </Route>
         <Route path='/movie/:id' element={<Movie />}></Route>
       </Routes>
